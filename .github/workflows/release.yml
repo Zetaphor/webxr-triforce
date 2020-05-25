@@ -17,7 +17,7 @@ jobs:
         uses: webaverse/xrpackage-build-action@v0.0.13
         with:
           src: '.'
-          dst: 'webxr-triforce.wbn'
+          dst: './webxr-triforce.wbn'
       - name: Echo build result
         run: echo 'The output file is ${{ steps.build.outputs.dst }}; the release name is ${{ steps.build.outputs.name }}'
       - name: Create Release
